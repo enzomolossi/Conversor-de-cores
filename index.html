@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conversor de Cores</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Conversor de Cores</h2>
+
+<div class="container">
+    <h3>RGB</h3>
+    <div>
+        <label for="redInput">Vermelho:</label>
+        <input type="text" id="redInput">
+        <label for="greenInput">Verde:</label>
+        <input type="text" id="greenInput">
+        <label for="blueInput">Azul:</label>
+        <input type="text" id="blueInput">
+        <button onclick="converterRGBparaHSV()">Converter para HSV</button>
+        <button onclick="converterRGBparaCMYK()">Converter para CMYK</button>
+        <button onclick="converterRGBparaEscalaDeCinza()">Converter para Escala de Cinza</button>
+    </div>
+</div>
+
+<div class="container">
+    <h3>HSV</h3>
+    <div>
+        <label for="hueInput">Matiz:</label>
+        <input type="text" id="hueInput">
+        <label for="saturationInput">Saturação:</label>
+        <input type="text" id="saturationInput">
+        <label for="valueInput">Valor:</label>
+        <input type="text" id="valueInput">
+        <button onclick="converterHSVparaRGB()">Converter para RGB</button>
+    </div>
+</div>
+
+<div class="container">
+    <h3>CMYK</h3>
+    <div>
+        <label for="cyanInput">Ciano:</label>
+        <input type="text" id="cyanInput">
+        <label for="magentaInput">Magenta:</label>
+        <input type="text" id="magentaInput">
+        <label for="yellowInput">Amarelo:</label>
+        <input type="text" id="yellowInput">
+        <label for="blackInput">Preto:</label>
+        <input type="text" id="blackInput">
+        <button onclick="converterCMYKparaRGB()">Converter para RGB</button>
+    </div>
+</div>
+
+<div class="container">
+    <h3>Escala de Cinza</h3>
+    <div>
+        <label for="grayInput">Escala de Cinza:</label>
+        <input type="text" id="grayInput">
+        <button onclick="converterEscalaDeCinzaparaRGB()">Converter para RGB</button>
+    </div>
+</div>
+
+<div id="colorBox"></div>
+
+<div class="container">
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
